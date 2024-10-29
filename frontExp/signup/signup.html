@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <hr>
+    <form action="http://127.0.0.1:5500/signup/signup.html" method="POST">
+        <fieldset>
+            <legend>계정 정보</legend>
+            <div>
+                <label for="id-account">아이디</label>
+                <input type="text" name="account" id="id-account" required ="required">
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" name="password" id="password-account"required ="required">
+            </div>
+            <div>
+                <label for="password2">비밀번호 확인</label>
+                <input type="password" name="password2" id="password-account2"required ="required">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>프로필</legend>
+            <div>
+                <label for="id-name">이름</label>
+                <input type="text" name="name" id="id-name"required ="required">
+            </div>
+            <div>
+                <label>생년월일</label>
+                <input type="number" name="birthyear" placeholder="년" min="1900" max="2024"required ="required">
+                <select name="birth-month"required ="required">
+                    <option value="">월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <input type="number" name="birthday" placeholder="일" min="1" max="31"required ="required">
+            </div>
+            <div>
+                <label>성별</label>
+                <input type="radio" name="gender" value="male" id="id-gender-male"required ="required">
+                <label for="id-gender-male">남</label>
+                <input type="radio" name="gender" value="female" id="id-gender-female"required ="required">
+                <label for="id-gender-female">여</label>
+            </div>
+            <div>
+                <input type="checkbox" name="agree" id="id-agree"required ="required">
+                <label for="id-agree">사이트 이용 약관과 개인정보 수집 방침에 동의합니다</label>
+            </div>
+            <div>
+                <button type="submit">가입하기</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

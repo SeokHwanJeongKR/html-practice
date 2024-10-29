@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.cell {
+    display: inline-block;
+    width: 30%;
+}
+.cell img {
+    width: 100;
+}
